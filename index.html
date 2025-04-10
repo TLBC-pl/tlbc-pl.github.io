@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TLBC Sp. z o.o.</title>
+  <meta name="description" content="TLBC Sp. z o.o. – strona w budowie. Skontaktuj się z nami pod adresem contact@tlbc.pl">
+  <meta name="keywords" content="TLBC, Spółka z o.o., Toruń, Technologia, Software, Konsulting">
+  <meta name="author" content="TLBC Sp. z o.o.">
+  <meta property="og:title" content="TLBC Sp. z o.o." />
+  <meta property="og:description" content="Strona w budowie. Skontaktuj się z nami pod adresem contact@tlbc.pl" />
+  <meta property="og:image" content="TLBC_Black.png" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff;
+      color: #000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    img {
+      width: 200px;
+      margin-bottom: 20px;
+      opacity: 0;
+      transform: scale(0.9);
+      animation: fadeIn 1.2s ease-out forwards;
+    }
+
+    h1, p, .button, .lang {
+      opacity: 0;
+      animation: fadeIn 1s ease-out forwards;
+    }
+
+    h1 { animation-delay: 0.3s; }
+    p { animation-delay: 0.6s; }
+    .button { animation-delay: 1s; }
+    .lang { animation-delay: 1.3s; }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: none;
+      }
+    }
+
+    .button {
+      margin-top: 1.5em;
+      padding: 10px 20px;
+      background-color: #4db8ff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .button:hover {
+      background-color: #3aa1dd;
+    }
+
+    .lang {
+      margin-top: 2em;
+      font-size: 0.9rem;
+      opacity: 0.6;
+    }
+
+    .lang-toggle {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    .lang-toggle button {
+      background: none;
+      color: #ccc;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .lang-toggle button.active {
+      font-weight: bold;
+      color: #4db8ff;
+    }
+  </style>
+</head>
+<body>
+  <div class="lang-toggle">
+    <button id="plBtn" class="active">PL</button> | 
+    <button id="enBtn">EN</button>
+  </div>
+
+  <img src="TLBC_Black.png" alt="TLBC Logo" />
+
+  <h1 id="headline">Strona w budowie</h1>
+
+  <p id="contact1">Skontaktuj się z nami: <a href="mailto:contact@tlbc.pl">contact@tlbc.pl</a></p>
+  <p id="contact2"><strong>UL. WŁOCŁAWSKA 167, 87-100 TORUŃ</strong></p>
+
+  <a class="button" href="https://outlook.office365.com/book/Letsdosomethinginteresting@tlbc.pl/" target="_blank" id="bookBtn">
+    Umów spotkanie
+  </a>
+
+  <div class="lang" id="footer">
+    <p>NIP: 9562397964</p>
+    <p>KRS: 0001138405</p>
+    <p>TLBC SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ</p>
+  </div>
+
+  <script>
+    const plBtn = document.getElementById('plBtn');
+    const enBtn = document.getElementById('enBtn');
+
+    const translations = {
+      pl: {
+        headline: "Strona w budowie",
+        contact1: "Skontaktuj się z nami: <a href='mailto:contact@tlbc.pl'>contact@tlbc.pl</a>",
+        contact2: "<strong>UL. WŁOCŁAWSKA 167, 87-100 TORUŃ</strong>",
+        bookBtn: "Umów spotkanie"
+      },
+      en: {
+        headline: "Page under construction",
+        contact1: "Contact us: <a href='mailto:contact@tlbc.pl'>contact@tlbc.pl</a>",
+        contact2: "<strong>WŁOCŁAWSKA 167, 87-100 TORUŃ, POLAND</strong>",
+        bookBtn: "Book a meeting"
+      }
+    };
+
+    function switchLang(lang) {
+      document.getElementById('headline').innerHTML = translations[lang].headline;
+      document.getElementById('contact1').innerHTML = translations[lang].contact1;
+      document.getElementById('contact2').innerHTML = translations[lang].contact2;
+      document.getElementById('bookBtn').innerHTML = translations[lang].bookBtn;
+      plBtn.classList.toggle('active', lang === 'pl');
+      enBtn.classList.toggle('active', lang === 'en');
+    }
+
+    plBtn.addEventListener('click', () => switchLang('pl'));
+    enBtn.addEventListener('click', () => switchLang('en'));
+  </script>
+</body>
+</html>
