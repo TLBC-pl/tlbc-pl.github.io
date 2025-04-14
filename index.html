@@ -93,6 +93,22 @@
       font-weight: bold;
       color: #4db8ff;
     }
+
+    .social {
+      margin-top: 2em;
+    }
+    .social a {
+      margin: 0 10px;
+      display: inline-block;
+    }
+    .social img {
+      width: 24px;
+      height: 24px;
+      transition: transform 0.2s ease;
+    }
+    .social img:hover {
+      transform: scale(1.2);
+    }
   </style>
 </head>
 <body>
@@ -118,6 +134,18 @@
     <p>TLBC SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ</p>
   </div>
 
+  <div class="social">
+    <a href="https://x.com/tlbcpl" target="_blank" aria-label="X / Twitter">
+      <img src="icons/twitter.svg" alt="X / Twitter" />
+    </a>
+    <a href="https://www.linkedin.com/company/tlbcpl" target="_blank" aria-label="LinkedIn">
+      <img src="icons/linkedin.svg" alt="LinkedIn" />
+    </a>
+    <a href="https://www.facebook.com/tlbcpl" target="_blank" aria-label="Facebook">
+      <img src="icons/facebook.svg" alt="Facebook" />
+    </a>
+  </div>
+  
   <script>
     const plBtn = document.getElementById('plBtn');
     const enBtn = document.getElementById('enBtn');
