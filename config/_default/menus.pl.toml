@@ -1,0 +1,26 @@
+############# Polish navigation ##############
+
+[[main]]
+name = "Strona główna"
+url = "/"
+weight = 1
+
+[[main]]
+name = "O nas"
+url = "about/"
+weight = 2
+
+[[main]]
+name = "Kontakt"
+url = "contact/"
+weight = 3
+
+[[footer]]
+name = "O nas"
+url = "about/"
+weight = 1
+
+[[footer]]
+name = "Kontakt"
+url = "contact/"
+weight = 3
