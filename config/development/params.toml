@@ -1,0 +1,3 @@
+# Local dev: disable scripts that block rendering on localhost (Cookiebot auto-blocking).
+custom_script = ""
+google_tag_manager = ""

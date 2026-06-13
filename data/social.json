@@ -1,0 +1,24 @@
+{
+  "main": [
+    {
+      "name": "github",
+      "icon": "fab fa-github",
+      "link": "https://github.com/TLBC-pl/"
+    },
+    {
+      "name": "LinkedIn",
+      "icon": "fab fa-linkedin",
+      "link": "https://www.linkedin.com/company/tlbcpl/"
+    },
+    {
+      "name": "X",
+      "icon": "fab fa-x-twitter",
+      "link": "https://x.com/tlbcpl"
+    },
+    {
+      "name": "Facebook",
+      "icon": "fab fa-facebook",
+      "link": "https://www.facebook.com/tlbcpl"
+    }
+  ]
+}

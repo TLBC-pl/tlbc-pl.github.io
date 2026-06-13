@@ -1,0 +1,38 @@
+{
+  "name": "TLBC.pl (Hugo + Node)",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-20-bookworm",
+  "features": {
+    "ghcr.io/devcontainers/features/hugo:1": {
+      "version": "0.121.2",
+      "extended": true
+    },
+    "ghcr.io/devcontainers/features/go:1": {
+      "version": "1.20.5"
+    }
+  },
+  "forwardPorts": [1313],
+  "appPort": [1313],
+  "portsAttributes": {
+    "1313": {
+      "label": "Hugo dev server",
+      "onAutoForward": "openBrowser",
+      "visibility": "public"
+    }
+  },
+  "postCreateCommand": "git submodule update --init --recursive && npm install",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "bradlc.vscode-tailwindcss",
+        "rusnasonov.vscode-hugo"
+      ],
+      "settings": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true,
+        "remote.autoForwardPorts": true,
+        "remote.autoForwardPortsSource": "hybrid"
+      }
+    }
+  }
+}

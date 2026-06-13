@@ -1,0 +1,7 @@
+[build]
+publish = "public"
+command = "npm run project-setup && npm run build -- --baseURL https://tlbc.pl/"
+
+[build.environment]
+HUGO_VERSION = "0.121.2"
+GO_VERSION = "1.20.5"
