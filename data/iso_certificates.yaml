@@ -1,0 +1,17 @@
+- standard: ISO 9001
+  logo: images/iso/Logo_for_client_1110011.png
+  documents:
+    en: /documents/iso/CERT_TLBC_ISO9001_EN.pdf
+    pl: /documents/iso/CERT_TLBC_ISO9001_PL.pdf
+
+- standard: ISO 27001
+  logo: images/iso/Logo_for_client_1110016.png
+  documents:
+    en: /documents/iso/CERT_TLBC_ISO27001_EN.pdf
+    pl: /documents/iso/CERT_TLBC_ISO27001_PL.pdf
+
+- standard: ISO 22301
+  logo: images/iso/Logo_for_client_1110073.png
+  documents:
+    en: /documents/iso/CERT_TLBC_ISO22301_EN.pdf
+    pl: /documents/iso/CERT_TLBC_ISO22301_PL.pdf
