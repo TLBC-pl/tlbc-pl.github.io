@@ -46,6 +46,12 @@
 - id: privacy_policy
   translation: "Polityka prywatności"
 
+- id: iso_certificates
+  translation: "Certyfikaty"
+
+- id: iso_certificate_download
+  translation: "Pobierz certyfikat"
+
 - id: contact_privacy_policy_link
   translation: "Link do polityki prywatności"
 

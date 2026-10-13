@@ -29,6 +29,8 @@ who_we_are:
 about_closing: |
   TLBC działa międzynarodowo, obsługując obecnie klientów m.in. w Szwajcarii, Francji, Stanach Zjednoczonych, Australii i Zjednoczonych Emiratach Arabskich.
 
+  Posiadamy certyfikaty **ISO 9001**, **ISO 27001** oraz **ISO 22301** — potwierdzenie naszego podejścia do jakości, bezpieczeństwa informacji i ciągłości działania.
+
   Siedziba znajduje się w Toruńskim Parku Technologicznym.
 ---
 

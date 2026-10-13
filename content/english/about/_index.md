@@ -29,6 +29,8 @@ who_we_are:
 about_closing: |
   TLBC operates internationally, currently serving clients in Switzerland, France, the United States, Australia, and the United Arab Emirates.
 
+  We are certified to **ISO 9001**, **ISO 27001**, and **ISO 22301**, reflecting our commitment to quality, information security, and business continuity.
+
   Headquarters are located in Toruń Technology Park in Poland.
 ---
 
